@@ -155,6 +155,8 @@ def compute_eer(target_scores, nontarget_scores):
     """ Returns equal error rate (EER) and the corresponding threshold. """
     frr, far, thresholds = compute_det_curve(target_scores, nontarget_scores)
     abs_diffs = np.abs(frr - far)
+    print("Hi Ashis\n")
+    print(abs_diffs,end='\n')
     min_index = np.argmin(abs_diffs)
     eer = np.mean((frr[min_index], far[min_index]))
     return eer, thresholds[min_index]
