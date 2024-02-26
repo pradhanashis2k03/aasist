@@ -54,7 +54,7 @@ def main(args: argparse.Namespace) -> None:
     # define database related paths
     output_dir = Path(args.output_dir)
     prefix_2019 = "ASVspoof2019.{}".format(track)
-    database_path = Path(config["ashis"])
+    database_path = Path(config["database_path"])
     dev_trial_path = (database_path /
                       "ASVspoof2019_{}_cm_protocols/{}.cm.dev.trl.txt".format(
                           track, prefix_2019))
