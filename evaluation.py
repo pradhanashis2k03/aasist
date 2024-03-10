@@ -35,9 +35,9 @@ def calculate_tDCF_EER(cm_scores_file,
     # asv_sources = asv_data[:, 0]
     asv_keys = asv_data[:, 1]
     asv_scores = asv_data[:, 2].astype(np.float64)
-    print("woah")
-    print(asv_scores,end='\n')
-    print(asv_data,end='\n')
+    # print("woah")
+    # print(asv_scores,end='\n')
+    # print(asv_data,end='\n')
 
     # Load CM scores
     cm_data = np.genfromtxt(cm_scores_file, dtype=str)
