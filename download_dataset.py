@@ -7,7 +7,7 @@ MIT license
 import os
 
 if __name__ == "__main__":
-    cmd = "curl -o ./LA.zip -# https://datashare.ed.ac.uk/bitstream/handle/10283/3336/LA.zip\?sequence\=3\&isAllowed\=y"
+    cmd = "curl -o /content/gdrive/MyDrive/hoho/LA.zip -# https://datashare.ed.ac.uk/bitstream/handle/10283/3336/LA.zip\?sequence\=3\&isAllowed\=y"
     os.system(cmd)
-    cmd = "unzip LA.zip"
+    cmd = "unzip /content/gdrive/MyDrive/hoho/LA.zip"
     os.system(cmd)
